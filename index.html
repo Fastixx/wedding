@@ -49,16 +49,31 @@ DEFAULT: '8px',
 </script>
 </head>
 <body class="bg-white min-h-screen">
-<nav class="bg-primary text-white py-4 fixed w-full z-50">
-<div class="container mx-auto px-4 flex justify-between items-center">
-<h1 class="lucida-calligraphy text-2xl">Z & T</h1>
-<div class="flex space-x-6">
-<a href="#story" class="hover:text-gold transition-colors" onclick="scrollToSection('story')">Unsere Geschichte / Nasza Historia</a>
-<a href="#schedule" class="hover:text-gold transition-colors" onclick="scrollToSection('schedule')">Zeitplan / Harmonogram</a>
-<a href="#dress-code" class="hover:text-gold transition-colors" onclick="scrollToSection('dress-code')">Dress Code</a>
-<a href="#gallery" class="hover:text-gold transition-colors" onclick="scrollToSection('gallery')">Fotogalerie / Galeria zdjęć</a>
-<a href="#rsvp" class="hover:text-gold transition-colors" onclick="scrollToSection('rsvp')">RSVP</a>
+<nav class="bg-primary text-white py-2 fixed w-full z-50">
+<div class="container mx-auto px-4">
+<div class="flex justify-between items-center mb-2">
+<h1 class="lucida-calligraphy text-2xl flex items-center">Z & T <i class="ri-links-line ml-2 text-gold"></i></h1>
 </div>
+<div class="flex justify-center space-x-8">
+<a href="#invitation" class="nav-link hover:text-gold transition-colors pb-2" onclick="scrollToSection('invitation')">Einladung / Zaproszenie</a>
+<a href="#locations" class="nav-link hover:text-gold transition-colors pb-2" onclick="scrollToSection('locations')">Locations</a>
+<a href="#schedule" class="nav-link hover:text-gold transition-colors pb-2" onclick="scrollToSection('schedule')">Zeitplan / Harmonogram</a>
+<a href="#accommodation" class="nav-link hover:text-gold transition-colors pb-2" onclick="scrollToSection('accommodation')">Übernachtung / Noclegi</a>
+<a href="#dress-code" class="nav-link hover:text-gold transition-colors pb-2" onclick="scrollToSection('dress-code')">Dress Code</a>
+<a href="#rsvp" class="nav-link hover:text-gold transition-colors pb-2" onclick="scrollToSection('rsvp')">RSVP</a>
+<a href="#gallery" class="nav-link hover:text-gold transition-colors pb-2" onclick="scrollToSection('gallery')">Galerie / Galeria</a>
+<a href="#traditions" class="nav-link hover:text-gold transition-colors pb-2" onclick="scrollToSection('traditions')">Traditionen / Tradycje</a>
+<a href="#gifts" class="nav-link hover:text-gold transition-colors pb-2" onclick="scrollToSection('gifts')">Geschenke / Prezenty</a>
+<a href="#story" class="nav-link hover:text-gold transition-colors pb-2" onclick="scrollToSection('story')">Unsere Geschichte / Nasza Historia</a>
+</div>
+</div>
+</nav>
+<style>
+.nav-link.active {
+text-decoration: underline;
+text-underline-offset: 4px;
+}
+</style>
 <script>
 function scrollToSection(id) {
 const element = document.getElementById(id);
@@ -79,22 +94,18 @@ behavior: 'smooth'
 <p class="text-2xl mb-8">31. Mai 2025</p>
 <div class="bg-white/10 backdrop-blur p-6 rounded-lg">
 <h2 class="text-xl mb-4">Bis zu unserem großen Tag / Do naszego wielkiego dnia</h2>
-<div id="countdown" class="grid grid-cols-4 gap-4 text-center">
+<div id="countdown" class="grid grid-cols-3 gap-8 text-center">
 <div>
-<span class="text-3xl font-bold" id="days">425</span>
-<p>Tage / Dni</p>
+<span class="text-4xl font-bold" id="days">425</span>
+<p>Tage</p>
 </div>
 <div>
-<span class="text-3xl font-bold" id="hours">12</span>
-<p>Stunden / Godziny</p>
+<span class="text-4xl font-bold" id="hours">12</span>
+<p>Stunden</p>
 </div>
 <div>
-<span class="text-3xl font-bold" id="minutes">30</span>
-<p>Minuten / Minuty</p>
-</div>
-<div>
-<span class="text-3xl font-bold" id="seconds">45</span>
-<p>Sekunden / Sekundy</p>
+<span class="text-4xl font-bold" id="minutes">30</span>
+<p>Minuten</p>
 </div>
 </div>
 </div>
@@ -107,40 +118,38 @@ class="absolute inset-0 w-full h-full object-cover" alt="Wedding couple">
 </header>
 <section id="invitation" class="py-20 bg-white">
 <div class="container mx-auto px-4">
-<h2 class="lucida-calligraphy text-4xl text-primary text-center mb-12">Unsere Einladung / Nasze zaproszenie</h2>
+<h2 class="lucida-calligraphy text-4xl text-primary text-center mb-12">Einladung / Zaproszenie</h2>
 <div class="max-w-3xl mx-auto text-center">
-<p class="text-xl mb-8">Liebe Familie, liebe Freunde,</p>
-<p class="text-lg mb-8">mit großer Freude laden wir Euch zu unserer Hochzeit am 31. Mai 2025 ein. Wir würden uns sehr freuen, wenn Ihr diesen besonderen Tag mit uns verbringt und Teil unserer Feier seid.</p>
-<p class="text-xl mb-8">Drodzy Rodzina i Przyjaciele,</p>
-<p class="text-lg">z wielką radością zapraszamy Was na nasz ślub 31 maja 2025 roku. Będzie nam bardzo miło, jeśli spędzicie z nami ten wyjątkowy dzień i będziecie częścią naszego święta.</p>
+<p class="text-xl mb-8">Liebe Familie und Freunde,</p>
+<p class="text-lg mb-8">endlich ist es soweit – wir sagen Ja! 
+Wir freuen uns riesig, diesen besonderen Tag mit euch zu feiern und laden euch herzlich zu unserer Hochzeit ein.
+
+Lasst uns gemeinsam lachen, tanzen und unvergessliche Erinnerungen schaffen! 
+
+Bitte gebt uns bis zum 30.04.2025 eine Rückmeldung, ob ihr mit dabei seid.
+
+Wir freuen uns auf euch!.</p>
+<p class="text-xl mb-8">Drodga Rodzino i Przyjaciele,</p>
+<p class="text-lg">W końcu nadszedł czas - mówimy tak! 
+Jesteśmy bardzo szczęśliwi, że możemy świętować z Wami ten wyjątkowy dzień i serdecznie zapraszamy na nasz ślub.
+
+Śmiejmy się, tańczmy i twórzmy razem niezapomniane wspomnienia! 
+
+Daj nam znać do 30.04.2025, czy do nas dołączysz.
+
+Z niecierpliwością czekamy na Ciebie!</p>
 </div>
 </div>
 </section>
 <section id="locations" class="py-20 bg-secondary/10">
 <div class="container mx-auto px-4">
 <h2 class="lucida-calligraphy text-4xl text-primary text-center mb-12">Locations / Lokalizacje</h2>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<div class="bg-white p-6 rounded-lg shadow-lg">
-<h3 class="text-2xl mb-4">Standesamt / Urząd Stanu Cywilnego</h3>
-<div class="mb-4">
-<p class="mb-2">Rathaus Linnich</p>
-<p>Rurdorfer Straße 64</p>
-<p>52441 Linnich</p>
-</div>
-<div class="mb-4">
-<h4 class="font-semibold mb-2">Parken / Parking:</h4>
-<p>Kostenlose Parkplätze direkt am Rathaus / Bezpłatny parking przy urzędzie</p>
-</div>
-<a href="https://maps.google.com/?q=Rathaus+Linnich" target="_blank" class="inline-flex items-center text-primary hover:text-primary/80">
-<i class="ri-map-pin-line mr-2"></i>
-Google Maps
-</a>
-</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 <div class="bg-white p-6 rounded-lg shadow-lg">
 <h3 class="text-2xl mb-4">Kirche / Kościół</h3>
 <div class="mb-4">
 <p class="mb-2">St. Martinus Kirche</p>
-<p>Kirchplatz 1</p>
+<p>Kirchplatz 3</p>
 <p>52441 Linnich</p>
 </div>
 <div class="mb-4">
@@ -156,12 +165,12 @@ Google Maps
 <h3 class="text-2xl mb-4">Feier / Przyjęcie</h3>
 <div class="mb-4">
 <p class="mb-2">Gut Alte Burg</p>
-<p>Kölnstraße 123</p>
+<p>Van-Gils-Straße 6</p>
 <p>52428 Jülich</p>
 </div>
 <div class="mb-4">
 <h4 class="font-semibold mb-2">Parken / Parking:</h4>
-<p>Großer Parkplatz vor Ort / Duży parking na miejscu</p>
+<p>Großer Parkplatz vor Ort. Hunde erlaubt / Duży parking na miejscu. Psy dozwolone</p>
 </div>
 <a href="https://maps.google.com/?q=Gut+Alte+Burg+Jülich" target="_blank" class="inline-flex items-center text-primary hover:text-primary/80">
 <i class="ri-map-pin-line mr-2"></i>
@@ -188,7 +197,7 @@ Google Maps
 <div class="w-4 h-4 bg-primary rounded-full relative z-10"></div>
 <div class="w-1/2 pl-8">
 <h3 class="text-xl mb-2">Trauung / Ślub</h3>
-<p class="text-gray-600">Pfarrkirche St. Martinus, Linnich / Kościół św. Marcina, Linnich</p>
+<p class="text-gray-600">Kirche St. Martinus, Linnich / Kościół św. Marcina, Linnich</p>
 </div>
 </div>
 <div class="flex items-center">
@@ -214,13 +223,13 @@ Google Maps
 <div class="w-4 h-4 bg-primary rounded-full relative z-10"></div>
 <div class="w-1/2 pl-8">
 <h3 class="text-xl mb-2">Mittagessen / Obiad</h3>
-<p class="text-gray-600">Gut Alte Burg, Jülich / Zamek Stary, Jülich</p>
+<p class="text-gray-600">Gut Alte Burg, Jülich</p>
 </div>
 </div>
 <div class="flex items-center">
 <div class="w-1/2 pr-8 text-right">
 <h3 class="text-xl mb-2">Kaffee & Kuchen / Kawa i ciasto</h3>
-<p class="text-gray-600">Gut Alte Burg, Jülich / Zamek Stary, Jülich</p>
+<p class="text-gray-600">Gut Alte Burg, Jülich</p>
 </div>
 <div class="w-4 h-4 bg-primary rounded-full relative z-10"></div>
 <div class="w-1/2 pl-8">
@@ -240,13 +249,13 @@ Google Maps
 <div class="w-4 h-4 bg-primary rounded-full relative z-10"></div>
 <div class="w-1/2 pl-8">
 <h3 class="text-xl mb-2">Eröffnungstanz & Party / Pierwszy taniec & Zabawa</h3>
-<p class="text-gray-600">Gut Alte Burg, Jülich / Zamek Stary, Jülich</p>
+<p class="text-gray-600">Gut Alte Burg, Jülich</p>
 </div>
 </div>
 <div class="flex items-center">
 <div class="w-1/2 pr-8 text-right">
 <h3 class="text-xl mb-2">Abendimbiss / Kolacja</h3>
-<p class="text-gray-600">Gut Alte Burg, Jülich / Zamek Stary, Jülich</p>
+<p class="text-gray-600">Gut Alte Burg, Jülich</p>
 </div>
 <div class="w-4 h-4 bg-primary rounded-full relative z-10"></div>
 <div class="w-1/2 pl-8">
@@ -258,15 +267,15 @@ Google Maps
 </div>
 <div class="flex items-center">
 <div class="w-1/2 pr-8 text-right">
-<h3 class="text-xl mb-2">Brautstraußwurf / Rzut bukietem</h3>
-<p class="text-gray-600">Gut Alte Burg, Jülich</p>
+<div class="flex justify-end items-center">
+<span class="text-2xl">21:00</span>
+<i class="ri-flower-line text-primary text-2xl ml-4"></i>
+</div>
 </div>
 <div class="w-4 h-4 bg-primary rounded-full relative z-10"></div>
 <div class="w-1/2 pl-8">
-<div class="flex items-center">
-<i class="ri-flower-line text-primary text-2xl mr-4"></i>
-<span class="text-2xl">21:00</span>
-</div>
+<h3 class="text-xl mb-2">Brautstraußwurf / Rzut bukietem</h3>
+<p class="text-gray-600">Gut Alte Burg, Jülich</p>
 </div>
 </div>
 <div class="flex items-center">
@@ -292,33 +301,28 @@ Google Maps
 <h2 class="lucida-calligraphy text-4xl text-primary text-center mb-12">Übernachtungsmöglichkeiten / Noclegi</h2>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
 <div class="bg-secondary/10 p-6 rounded-lg">
-<h3 class="text-2xl mb-4">Hotel am Markt</h3>
+<h3 class="text-2xl mb-4">Gut Alte Burg</h3>
 <div class="mb-4">
-<p>Marktplatz 5, 52441 Linnich</p>
-<p class="mb-2">Tel: +49 2462 12345</p>
-<p class="mb-4">Ab 89€ pro Nacht / Od 89€ za noc</p>
-<a href="https://maps.google.com/?q=Hotel+am+Markt+Linnich" target="_blank" class="inline-flex items-center text-primary hover:text-primary/80">
+<p>Van-Gils-Straße 6, 52428 Jülich</p>
+<p class="mb-2">Dort wo wir feiern gibt es die Möglichkeit auch zu schlafen. Kontaktiert dafür uns oder einen unserer Trauzeugen / Istnieje również możliwość spania tam, gdzie świętujemy. Prosimy o kontakt z nami lub jednym z naszych świadków</p>
+<p class="mb-4">75€ bzw. 100€ (Einzelzimmer/Doppelzimmer) pro Nacht / 75€ lub 100 € (jednoosobowy/dwuosobowy)za noc</p>
+<a href="https://maps.google.com/?q=Gut+Alte+Burg+Jülich" target="_blank" class="inline-flex items-center text-primary hover:text-primary/80">
 <i class="ri-map-pin-line mr-2"></i>
 Google Maps
 </a>
 </div>
 </div>
 <div class="bg-secondary/10 p-6 rounded-lg">
-<h3 class="text-2xl mb-4">Landhaus Sonne</h3>
+<h3 class="text-2xl mb-4">Hotel Royal Jülich</h3>
 <div class="mb-4">
-<p>Sonnenweg 8, 52441 Linnich</p>
-<p class="mb-2">Tel: +49 2462 67890</p>
-<p class="mb-4">Ab 75€ pro Nacht / Od 75€ za noc</p>
-<a href="https://maps.google.com/?q=Landhaus+Sonne+Linnich" target="_blank" class="inline-flex items-center text-primary hover:text-primary/80">
+<p>Dürener Straße 37, 52428 Jülich</p>
+<p class="mb-2">Etwa 3 km weiter befindet sich ein weiteres Hotel / W odległości około 3 km znajduje się inny hotel</p>
+<p class="mb-4">Ab 120€ pro Nacht / Od 120€ za noc</p>
+<a href="https://maps.google.com/?q=Hotel+Royal+Jülich" target="_blank" class="inline-flex items-center text-primary hover:text-primary/80">
 <i class="ri-map-pin-line mr-2"></i>
 Google Maps
 </a>
 </div>
-</div>
-</div>
-<div class="max-w-4xl mx-auto">
-<div class="relative h-[400px] rounded-lg overflow-hidden">
-<img src="https://public.readdy.ai/gen_page/map_placeholder_1280x720.png" class="absolute inset-0 w-full h-full object-cover" alt="Map">
 </div>
 </div>
 </div>
@@ -332,7 +336,7 @@ Google Maps
 <ul class="space-y-4">
 <li class="flex items-center">
 <i class="ri-check-line text-gold mr-2"></i>
-<span>Cocktailkleider / Sukienki koktajlowe</span>
+<span>Abendkleider / Sukienki koktajlowe</span>
 </li>
 <li class="flex items-center">
 <i class="ri-check-line text-gold mr-2"></i>
@@ -407,26 +411,26 @@ class="w-full h-48 object-cover rounded-lg" alt="Men's tuxedo">
 <h2 class="lucida-calligraphy text-4xl text-primary text-center mb-12">RSVP</h2>
 <form id="rsvp-form" class="max-w-2xl mx-auto bg-secondary/10 p-8 rounded-lg">
 <div class="mb-6">
-<label class="block mb-2">Teilnahme / Udział *</label>
+<label class="block mb-2">Teilnahme *</label>
 <div class="flex gap-4">
 <button type="button" onclick="setAttendance('yes')" class="flex-1 py-3 px-6 rounded-button border-2 border-primary attendance-btn" data-value="yes">
 <i class="ri-check-line mr-2"></i>
-Zusage / Potwierdzam
+Zusage
 </button>
 <button type="button" onclick="setAttendance('no')" class="flex-1 py-3 px-6 rounded-button border-2 border-primary attendance-btn" data-value="no">
 <i class="ri-close-line mr-2"></i>
-Absage / Odmawiam
+Absage
 </button>
 </div>
 <input type="hidden" name="attendance" id="attendance" required>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 <div>
-<label class="block mb-2">Name / Imię i Nazwisko *</label>
+<label class="block mb-2">Nachname / Nazwisko *</label>
 <input type="text" name="name" class="w-full p-3 rounded-button border-none bg-white" required>
 </div>
 <div>
-<label class="block mb-2">Email *</label>
+<label class="block mb-2">Vornamen der Gäste / Imiona gości *</label>
 <input type="email" name="email" class="w-full p-3 rounded-button border-none bg-white" required>
 </div>
 <div>
@@ -434,29 +438,20 @@ Absage / Odmawiam
 <input type="tel" name="phone" class="w-full p-3 rounded-button border-none bg-white">
 </div>
 <div>
-<label class="block mb-2">Anzahl der Gäste / Liczba gości *</label>
+<label class="block mb-2">Anzahl der Gäste / Liczba gości*</label>
 <input type="number" name="guests" min="1" max="5" class="w-full p-3 rounded-button border-none bg-white" required>
 </div>
 <div class="md:col-span-2">
-<label class="block mb-2">Übernachtung gewünscht? / Potrzebny nocleg?</label>
-<div class="flex space-x-4">
-<label class="flex items-center">
-<input type="radio" name="accommodation" value="yes" class="mr-2">
-Ja / Tak
-</label>
-<label class="flex items-center">
-<input type="radio" name="accommodation" value="no" class="mr-2">
-Nein / Nie
-</label>
-</div>
+<label class="block mb-2">Besondere Essenswünsche oder Sonstiges/ Specjalne życzenia dotyczące posiłków lub różne</label>
+<input type="text" name="dietary" class="w-full p-3 rounded-button border-none bg-white">
 </div>
 <div class="md:col-span-2">
-<label class="block mb-2">Besondere Essenswünsche / Specjalne życzenia żywieniowe</label>
-<textarea name="dietary" rows="2" class="w-full p-3 rounded-button border-none bg-white"></textarea>
+<label class="block mb-2">Musikwünsche / Życzenia dotyczące muzyki (TOP 3)</label>
+<div class="space-y-3">
+<input type="text" name="music1" placeholder="1." class="w-full p-3 rounded-button border-none bg-white">
+<input type="text" name="music2" placeholder="2." class="w-full p-3 rounded-button border-none bg-white">
+<input type="text" name="music3" placeholder="3." class="w-full p-3 rounded-button border-none bg-white">
 </div>
-<div class="md:col-span-2">
-<label class="block mb-2">Musikwunsch / Życzenie muzyczne</label>
-<input type="text" name="music" class="w-full p-3 rounded-button border-none bg-white">
 </div>
 </div>
 <button type="submit" class="mt-6 w-full bg-primary text-white py-3 rounded-button hover:bg-primary/90 transition-colors">
@@ -492,8 +487,8 @@ e.preventDefault();
 const formData = new FormData(this);
 const attendance = formData.get('attendance');
 const mailtoLink = `mailto:Thomas.Ol@gmx.de?subject=Antwort Hochzeit&body=Teilnahme: ${attendance === 'yes' ? 'Zusage' : 'Absage'}%0D%0A
-Name: ${formData.get('name')}%0D%0A
-Email: ${formData.get('email')}%0D%0A
+Nachname: ${formData.get('name')}%0D%0A
+Vornamen: ${formData.get('email')}%0D%0A
 Telefon: ${formData.get('phone')}%0D%0A
 Anzahl der Gäste: ${formData.get('guests')}%0D%0A
 Übernachtung: ${formData.get('accommodation')}%0D%0A
@@ -535,7 +530,7 @@ class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transit
 </div>
 <div class="p-6">
 <h3 class="text-xl mb-2">Junggesellenabschied / Wieczór kawalerski</h3>
-<p class="text-gray-600">Stefans letzter Abend in Freiheit / Ostatni wieczór wolności Stefana</p>
+<p class="text-gray-600">Thomas letzter Abend in Freiheit / Ostatni wieczór wolności Tomka</p>
 </div>
 </div>
 <div class="bg-secondary/10 rounded-lg overflow-hidden group cursor-pointer" onclick="openGallery('bachelorette')">
@@ -548,7 +543,7 @@ class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transit
 </div>
 <div class="p-6">
 <h3 class="text-xl mb-2">Junggesellinnenabschied / Wieczór panieński</h3>
-<p class="text-gray-600">Magdalenas letzte Party als Single / Ostatnia impreza Magdaleny jako singielki</p>
+<p class="text-gray-600">Zitas letzte Party als Single / Ostatnia impreza Zity jako singielki</p>
 </div>
 </div>
 <div class="bg-secondary/10 rounded-lg overflow-hidden group cursor-pointer" onclick="openGallery('celebration')">
@@ -560,7 +555,7 @@ class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transit
 </div>
 </div>
 <div class="p-6">
-<h3 class="text-xl mb-2">Verlobungsfeier / Zaręczyny</h3>
+<h3 class="text-xl mb-2">Verlobung / Zaręczyny</h3>
 <p class="text-gray-600">Der magische Moment / Magiczny moment</p>
 </div>
 </div>
@@ -592,34 +587,46 @@ class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transit
 <section id="traditions" class="py-20 bg-secondary/10">
 <div class="container mx-auto px-4">
 <h2 class="lucida-calligraphy text-4xl text-primary text-center mb-12">Bräuche & Traditionen / Zwyczaje i tradycje</h2>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 <div class="bg-white p-6 rounded-lg shadow-sm">
-<div class="w-12 h-12 flex items-center justify-center mb-4">
+<div class="w-12 h-12 flex items-center justify-center mb-3">
 <i class="ri-heart-line text-2xl text-primary"></i>
 </div>
 <h3 class="text-xl mb-3">Kuss-Tradition / Tradycja pocałunku</h3>
-<p class="text-gray-600 text-sm">In Polen ruft man "Gorzko!" (bitter), damit das Brautpaar sich küsst / W Polsce krzyczymy "Gorzko!", aby para młoda się pocałowała</p>
+<p class="text-gray-600 text-sm">In Polen ruft man "Gorzko!" [ɡoschko] (Bitter), bis sich das Brautpaar küsst. Herzliche Einladung mitzurufen, um den Moment mit einem Kuss zu versüßen</p>
+<p class="text-gray-600 text-sm">Krzyczymy "Gorzko!", aby para młoda mogli osłodzić ten moment pocałunkiem.</p>
 </div>
 <div class="bg-white p-6 rounded-lg shadow-sm">
-<div class="w-12 h-12 flex items-center justify-center mb-4">
+<div class="w-12 h-12 flex items-center justify-center mb-3">
 <i class="ri-flower-line text-2xl text-primary"></i>
 </div>
 <h3 class="text-xl mb-3">Brautstrauß / Bukiet</h3>
-<p class="text-gray-600 text-sm">Der Brautstraußwurf ist ein Symbol für die nächste Hochzeit / Rzut bukietem symbolizuje następny ślub</p>
+<p class="text-gray-600 text-sm">Die alte Tradition des Brautstraußwurfs besagt, dass die Person, die den Strauß fängt, als Nächstes heiraten wird.</p>
+<p class="text-gray-600 text-sm">Stara tradycja rzucania bukietem ślubnym mówi, że osoba, która złapie bukiet, jako następna wyjdzie za mąż.</p>
 </div>
 <div class="bg-white p-6 rounded-lg shadow-sm">
-<div class="w-12 h-12 flex items-center justify-center mb-4">
+<div class="w-12 h-12 flex items-center justify-center mb-3">
 <i class="ri-shirt-line text-2xl text-primary"></i>
 </div>
 <h3 class="text-xl mb-3">Jackett / Marynarka</h3>
-<p class="text-gray-600 text-sm">Der Bräutigam entscheidet, wann die Jacketts ausgezogen werden dürfen / Pan młody decyduje, kiedy można zdjąć marynarki</p>
+<p class="text-gray-600 text-sm">Sobald der Bräutigam das Jacket auszieht, dürfen alle das Jacket ausziehen.</p>
+<p class="text-gray-600 text-sm">Dopiero gdy pan młody zdejmie marynarkę, wszyscy mogą ją zdjąć. </p>
 </div>
 <div class="bg-white p-6 rounded-lg shadow-sm">
-<div class="w-12 h-12 flex items-center justify-center mb-4">
+<div class="w-12 h-12 flex items-center justify-center mb-3">
+<i class="ri-shirt-line text-2xl text-primary"></i>
+</div>
+<h3 class="text-xl mb-3">Kuchenanschnitt / Marynarka</h3>
+<p class="text-gray-600 text-sm">Der Kuchenanschnitt symbolisiert den ersten gemeinsamen Akt als Ehepaar. Traditionell halten beide gemeinsam das Messer – wer die Hand oben hat, wird in der Ehe "die Hosen anhaben". Danach wird sich mit dem Kuchen gegenseitige gefüttert. Es zeigt, dass sich das Paar künftig umeinander kümmern wird.</p>
+<p class="text-gray-600 text-sm">Krojenie tortu symbolizuje pierwszy wspólny akt małżeński. Zgodnie z tradycją, oboje trzymają nóż razem - ktokolwiek ma rękę na górze, będzie „nosił spodnie” w małżeństwie. Następnie karmią się nawzajem ciastem. Pokazuje to, że para będzie dbać o siebie nawzajem w przyszłości.  </p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-sm">
+<div class="w-12 h-12 flex items-center justify-center mb-3">
 <i class="ri-goblet-line text-2xl text-primary"></i>
 </div>
 <h3 class="text-xl mb-3">Tanzpausen / Przerwy</h3>
-<p class="text-gray-600 text-sm">Regelmäßige Pausen zum Anstoßen und Genießen / Regularne przerwy na toast i przekąski</p>
+<p class="text-gray-600 text-sm">Es wird nicht dauerhaft getanzt. Regelmäßig werden Musikpausen eingelegt, um gemeinsam ein paar Kurze zu trinken. Wir erhoffen uns dadurch mehr Action auf der Tanzfläche.</p>
+<p class="text-gray-600 text-sm">Nie ma ciągłego tańca. Są regularne przerwy w muzyce, aby wypić razem kilka kieliszków. Mamy nadzieję, że doprowadzi to do większej aktywności na parkiecie.</p>
 </div>
 </div>
 </div>
@@ -643,11 +650,37 @@ class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transit
 <div class="space-y-6">
 <div class="bg-secondary/10 p-6 rounded-lg">
 <h3 class="text-2xl mb-4">Wie wir uns kennengelernt haben / Jak się poznaliśmy</h3>
-<p class="text-gray-700">Ein zufälliges Treffen in einem Café in Berlin wurde zum Beginn unserer gemeinsamen Geschichte. / Przypadkowe spotkanie w berlińskiej kawiarni stało się początkiem naszej wspólnej historii.</p>
+<p class="text-gray-700">- Als wir uns das erste Mal begegneten, waren wir noch jung – zwei Funken in der Welt der Feuerwehr. Zwischen Übungen und Einsätzen, zwischen Wasserschläuchen und Feuerschein, kreuzten sich unsere Wege immer wieder. Doch damals waren wir nur ein Teil derselben Geschichte, ohne zu wissen, dass unsere Kapitel eines Tages miteinander verschmelzen würden.
+
+Die Jahre vergingen, und das Leben führte uns auf getrennte Pfade. Erinnerungen verblassten, unsere Wege trennten sich, und eine lange Zeit sahen wir uns nicht mehr. Doch tief in uns blieb etwas bestehen – ein unausgesprochenes Band, das weder Zeit noch Distanz lösen konnte.
+
+Dann, nach all den Jahren, standen wir uns plötzlich wieder gegenüber. Ein Blick, ein Moment – und alles war anders. Was wir einst nicht sahen, trat nun in strahlendem Licht hervor: deine Stärke, dein Verstand, dein Herz. Diesmal wussten wir, dass wir zusammengehören.
+
+Aus den Funken von damals war eine Flamme geworden – eine, die bis heute brennt. Nun Feuer und Flamme.</p>
+<p class="text-gray-700">- Kiedy spotkaliśmy się po raz pierwszy, byliśmy jeszcze młodzi - dwie iskierki w świecie straży pożarnej. Pomiędzy ćwiczeniami i wyjazdami, pomiędzy wężami z wodą i ogniem, nasze drogi wciąż się krzyżowały. Ale wtedy byliśmy tylko częścią tej samej historii, nie zdając sobie sprawy, że nasze rozdziały pewnego dnia się połączą.
+
+Lata mijały, a życie prowadziło nas osobnymi ścieżkami. Wspomnienia wyblakły, nasze drogi się rozeszły i nie widzieliśmy się ponownie przez długi czas. Ale głęboko w nas coś pozostało - niewypowiedziana więź, której ani czas, ani odległość nie mogły przerwać.
+
+Potem, po tych wszystkich latach, nagle znów znaleźliśmy się twarzą w twarz. Jedno spojrzenie, jedna chwila - i wszystko było inne. To, czego kiedyś nie widzieliśmy, teraz pojawiło się w promiennym świetle: twoja siła, twój umysł, twoje serce. Tym razem wiedzieliśmy, że należymy do siebie.
+
+Iskry z tamtego czasu stały się płomieniem, który płonie do dziś. Teraz ogień i płomień.</p>
 </div>
 <div class="bg-secondary/10 p-6 rounded-lg">
 <h3 class="text-2xl mb-4">Der Antrag / Oświadczyny</h3>
-<p class="text-gray-700">Unter dem Sternenhimmel, auf der Terrasse unseres Lieblingsrestaurants, stellte Stefan die wichtigste Frage. / Pod rozgwieżdżonym niebem, na tarasie naszej ulubionej restauracji, Stefan zadał najważniejsze pytanie.</p>
+<p class="text-gray-700">- Unsere Reise war geprägt von besonderen Momenten – von Erinnerungen, die sich tief in unser Herz eingegraben haben. Sieben Jahre lang haben wir gemeinsam Höhen erklommen und Tiefen durchstanden, uns gestärkt, geliebt und immer wieder gefunden. Es war an der Zeit, all das zu feiern – auf eine Weise, die unserer Liebe gerecht wird.
+
+Mit sieben Dates tauchten wir noch einmal in unsere schönsten Erlebnisse ein. Jeder dieser Tage erinnerte uns an ein Kapitel unserer Geschichte, an die kleinen und großen Augenblicke, die uns unzertrennlich machten. Sieben Liebesbriefe folgten – Worte, die festhielten, was manchmal zwischen den Zeilen des Alltags verloren geht. Jeder Brief betonte eine Eigenschaft, die das Herz des anderen so einzigartig macht.
+
+Und dann waren da noch die sieben Überraschungen – kleine Gesten voller Liebe, Lächeln, Staunen und Glück. Jede einzelne war ein Versprechen für die Zukunft, ein Zeichen dafür, dass unser Weg immer weitergeht, dass wir immer wieder neue Gründe finden werden, einander zu lieben.
+
+Am Ende dieser Reise blieb nur noch eine Frage. Eine Frage, die längst beantwortet war – nicht durch Worte, sondern durch alles, was uns verbindet. Denn nach sieben Jahren, sieben Dates, sieben Briefen und sieben Überraschungen gab es nur noch einen Schritt zu gehen: den Schritt, der uns für immer vereint.</p>
+<p class="text-gray-700">- Nasza podróż charakteryzowała się wyjątkowymi chwilami - wspomnieniami, które są głęboko wyryte w naszych sercach. Przez siedem lat razem wspinaliśmy się na wyżyny i znosiliśmy upadki, wzmacnialiśmy się nawzajem, kochaliśmy się i odnajdywaliśmy na nowo. Nadszedł czas, aby to wszystko uczcić - w sposób, który oddaje sprawiedliwość naszej miłości.
+
+W siedmiu dniach ponownie zanurzyliśmy się w naszych ulubionych doświadczeniach. Każdy z tych dni przypominał nam o jednym z rozdziałów naszej historii, o małych i dużych chwilach, które uczyniły nas nierozłącznymi. Następnie siedem listów miłosnych - słowa, które uchwyciły to, co czasami gubi się między wierszami codziennego życia. Każdy list podkreślał cechę, która sprawia, że serce drugiej osoby jest tak wyjątkowe.
+
+A potem było siedem niespodzianek - małe gesty pełne miłości, uśmiechu, zdumienia i szczęścia. Każdy z nich był obietnicą na przyszłość, znakiem, że nasza podróż zawsze będzie trwać, że zawsze znajdziemy nowe powody, by się kochać.
+
+Pod koniec tej podróży pozostało tylko jedno pytanie. Pytanie, na które już dawno udzielono odpowiedzi - nie słowami, ale wszystkim, co nas łączy. Ponieważ po siedmiu latach, siedmiu datach, siedmiu listach i siedmiu niespodziankach pozostał tylko jeden krok do zrobienia: krok, który połączy nas na zawsze.</p>
 </div>
 </div>
 <div class="relative h-[500px] rounded-lg overflow-hidden">
@@ -671,7 +704,7 @@ class="w-full h-full object-cover rounded-full border-4 border-gold" alt="Maid o
 </div>
 <p class="text-lg font-semibold">Sara Piernikarczyk</p>
 <p class="mb-2">Trauzeugin</p>
-<p>+49 176 1234567</p>
+<p>+49 176 061842792</p>
 </div>
 <div class="text-center">
 <div class="w-48 h-48 mb-4">
@@ -680,7 +713,7 @@ class="w-full h-full object-cover rounded-full border-4 border-gold" alt="Best M
 </div>
 <p class="text-lg font-semibold">Shawn Heinemann</p>
 <p class="mb-2">Trauzeuge</p>
-<p>+49 177 9876543</p>
+<p>+49 172 01024192</p>
 </div>
 </div>
 </div>
@@ -689,11 +722,11 @@ class="w-full h-full object-cover rounded-full border-4 border-gold" alt="Best M
 <div class="space-y-4">
 <p>
 <i class="ri-mail-line mr-2"></i>
-wedding@magdalena-stefan.com
+Thomas.Ol@gmx.de
 </p>
 <p>
 <i class="ri-phone-line mr-2"></i>
-+49 123 456789
++49 174 244 3978
 </p>
 <p>
 <i class="ri-map-pin-line mr-2"></i>
@@ -710,6 +743,32 @@ Goethestraße 13<br>
 </div>
 </footer>
 <script>
+let currentLang = 'de';
+function toggleLanguage() {
+currentLang = currentLang === 'de' ? 'pl' : 'de';
+document.getElementById('lang-toggle').textContent = currentLang.toUpperCase();
+// Add your language switching logic here
+}
+function updateActiveNavLink() {
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-link');
+let current = '';
+sections.forEach(section => {
+const sectionTop = section.offsetTop;
+const sectionHeight = section.clientHeight;
+if (window.pageYOffset >= sectionTop - 150) {
+current = section.getAttribute('id');
+}
+});
+navLinks.forEach(link => {
+link.classList.remove('active');
+if (link.getAttribute('href') === `#${current}`) {
+link.classList.add('active');
+}
+});
+}
+window.addEventListener('scroll', updateActiveNavLink);
+window.addEventListener('load', updateActiveNavLink);
 function updateCountdown() {
 const weddingDate = new Date('2025-05-31T10:30:00').getTime();
 const now = new Date().getTime();
@@ -717,7 +776,6 @@ const distance = weddingDate - now;
 document.getElementById('days').textContent = Math.floor(distance / (1000 * 60 * 60 * 24));
 document.getElementById('hours').textContent = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 document.getElementById('minutes').textContent = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-document.getElementById('seconds').textContent = Math.floor((distance % (1000 * 60)) / 1000);
 }
 setInterval(updateCountdown, 1000);
 updateCountdown();
