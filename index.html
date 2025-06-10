@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zita & Thomas - Hochzeit</title>
+<title>Zita & Thomas - Danke / Dziękujemy</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,26 +49,11 @@ DEFAULT: '8px',
 </script>
 </head>
 <body class="bg-white min-h-screen">
-<nav class="bg-primary text-white py-2 fixed w-full z-50">
+<nav class="bg-primary text-white py-4 fixed w-full z-50">
 <div class="container mx-auto px-4">
-<div class="flex justify-between items-center mb-2">
-<h1 class="lucida-calligraphy text-2xl flex items-center">Z & T <i class="ri-links-line ml-2 text-gold"></i></h1>
+<div class="flex justify-center items-center">
+<h1 class="lucida-calligraphy text-2xl flex items-center">Z & T <i class="ri-heart-line ml-2 text-gold"></i></h1>
 </div>
-<div class="flex justify-center space-x-8">
-<a id="title-Einladung" href="#invitation" class="nav-link hover:text-gold transition-colors pb-2" onclick="scrollToSection('invitation')"></a>
-<a id="title-Location" href="#locations" class="nav-link hover:text-gold transition-colors pb-2" onclick="scrollToSection('locations')"></a>
-<a id="title-Zeitplan" href="#schedule" class="nav-link hover:text-gold transition-colors pb-2" onclick="scrollToSection('schedule')"></a>
-<a id="title-Übernachtung" href="#accommodation" class="nav-link hover:text-gold transition-colors pb-2" onclick="scrollToSection('accommodation')"></a>
-<a id="title-Dress" href="#dress-code" class="nav-link hover:text-gold transition-colors pb-2" onclick="scrollToSection('dress-code')"></a>
-<a id="title-Antwort" href="#rsvp" class="nav-link hover:text-gold transition-colors pb-2" onclick="scrollToSection('rsvp')"></a>
-<a id="title-Galerie" href="#gallery" class="nav-link hover:text-gold transition-colors pb-2" onclick="scrollToSection('gallery')"></a>
-<a id="title-Traditionen" href="#traditions" class="nav-link hover:text-gold transition-colors pb-2" onclick="scrollToSection('traditions')"></a>
-<a id="title-Geschenke" href="#gifts" class="nav-link hover:text-gold transition-colors pb-2" onclick="scrollToSection('gifts')"></a>
-<a id="title-Geschichte" href="#story" class="nav-link hover:text-gold transition-colors pb-2" onclick="scrollToSection('story')"></a>
-</div>
- <button onclick="toggleLanguage()" class="ml-4 px-3 py-1 border-2 border-white rounded-full hover:bg-white hover:text-primary transition-colors">
-    <span id="lang-toggle">DE</span>
-</button>
 </div>
 </nav>
 <style>
@@ -90,518 +75,85 @@ behavior: 'smooth'
 </script>
 </div>
 </nav>
-<header class="pt-20 h-[85vh] bg-gradient-to-b from-primary to-secondary flex items-center">
-<div class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-<div class="text-white">
-<h1 class="lucida-calligraphy text-5xl mb-6">Zita & Thomas</h1>
-<p id="daTum" class="text-2xl mb-8"></p>
-<div class="bg-white/10 backdrop-blur p-6 rounded-lg">
-<h2 id="countdown-title" class="text-xl mb-4"></h2>
-<div id="countdown" class="grid grid-cols-3 gap-8 text-center">
-<div>
-<span class="text-4xl font-bold" id="days">425</span>
-<p>Tage</p>
+<header class="pt-20 min-h-screen bg-gradient-to-b from-primary to-secondary flex items-center">
+<div class="container mx-auto px-4">
+<div class="max-w-4xl mx-auto text-center text-white">
+<h1 class="lucida-calligraphy text-5xl mb-6">Danke / Dziękujemy</h1>
+<p class="text-2xl mb-8">31. Mai 2025</p>
+<div class="relative h-[500px] rounded-lg overflow-hidden mb-12">
+<img src="https://raw.githubusercontent.com/Fastixx/wedding/main/images/_Z611423.jpg"
+class="absolute inset-0 w-full h-full object-cover" alt="Wedding celebration">
 </div>
-<div>
-<span class="text-4xl font-bold" id="hours">12</span>
-<p>Stunden</p>
+<div class="bg-white/10 backdrop-blur p-8 rounded-lg">
+<p class="text-xl leading-relaxed mb-6">Liebe Familie, liebe Freunde,</p>
+<p class="text-lg leading-relaxed mb-8">von ganzem Herzen danken wir Euch für die unvergesslichen Momente an unserem Hochzeitstag. Eure Anwesenheit, Eure Glückwünsche und die vielen besonderen Gesten haben diesen Tag zu etwas ganz Besonderem gemacht.</p>
+<p class="text-xl leading-relaxed mb-6">Drodzy Rodzina i Przyjaciele,</p>
+<p class="text-lg leading-relaxed">z całego serca dziękujemy Wam za niezapomniane chwile w dniu naszego ślubu. Wasza obecność, życzenia i wszystkie wyjątkowe gesty uczyniły ten dzień naprawdę wyjątkowym.</p>
 </div>
-<div>
-<span class="text-4xl font-bold" id="minutes">30</span>
-<p>Minuten</p>
-</div>
-</div>
-</div>
-</div>
-<div class="relative h-[500px] rounded-lg overflow-hidden">
-<img src="https://raw.githubusercontent.com/Fastixx/wedding/main/images/329217.jpg"
-class="absolute inset-0 w-full h-full object-cover" alt="Wedding couple">
 </div>
 </div>
 </header>
-<!--//Einladung -->
-<section id="invitation" class="py-20 bg-white">
+<section class="py-20 bg-white">
 <div class="container mx-auto px-4">
-<h2 class="lucida-calligraphy text-4xl text-primary text-center mb-12 title-Einladung"></h2>
-<div class="max-w-3xl mx-auto text-center">
-<p id="title-text-Einladung" class="text-xl mb-8"/p>
-<p id="text-Einladung" class="text-lg mb-8"></p>
-</div>
-</div>
-</section>
-<!--//Locations-->
-<section id="locations" class="py-20 bg-secondary/10">
-<div class="container mx-auto px-4">
-<h2 class="title-Location lucida-calligraphy text-4xl text-primary text-center mb-12"></h2>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-<div class="bg-white p-6 rounded-lg shadow-lg">
-<h3 class="text-2xl mb-4 church"></h3>
-<div class="mb-4">
-<p class="mb-2">St. Martinus Kirche</p>
-<p>Kirchplatz 3</p>
-<p>52441 Linnich</p>
-</div>
-<div class="mb-4">
-<h4 class="font-semibold mb-2 parking"></h4>
-<p class="text-park-church mb-2"></p>
-</div>
-<a href="https://maps.google.com/?q=St+Martinus+Kirche+Linnich" target="_blank" class="inline-flex items-center text-primary hover:text-primary/80">
-<i class="ri-map-pin-line mr-2"></i>
-Google Maps
-</a>
-</div>
-<div class="bg-white p-6 rounded-lg shadow-lg">
-<h3 class="text-2xl mb-4 party"></h3>
-<div class="mb-4">
-<p class="mb-2">Parkrestaurant Werden</p>
-<p>Bahnstraße 14</p>
-<p>52499 Baesweiler</p>
-</div>
-<div class="mb-4">
-<h4 class="font-semibold mb-2 parking"></h4>
-<p class="text-park-party"></p>
-</div>
-<a href="https://maps.google.com/?q=Parkrestaurant+Werden" target="_blank" class="inline-flex items-center text-primary hover:text-primary/80">
-<i class="ri-map-pin-line mr-2"></i>
-Google Maps
-</a>
-</div>
-</div>
-</div>
-</section>
-<section id="schedule" class="py-20 bg-white">
-<div class="container mx-auto px-4">
-<h2 class="lucida-calligraphy text-4xl text-primary text-center mb-12 title-Zeitplan"></h2>
 <div class="max-w-4xl mx-auto">
-<div class="relative">
-<div class="absolute left-1/2 -translate-x-[1px] h-full w-[2px] bg-primary/20"></div>
-<div class="space-y-12">
-<div class="flex items-center">
-<div class="w-1/2 pr-8 text-right">
-<div class="flex justify-end items-center">
-<span class="text-2xl">10:30</span>
-<i class="ri-church-line text-primary text-2xl ml-4"></i>
-</div>
-</div>
-<div class="w-4 h-4 bg-primary rounded-full relative z-10"></div>
-<div class="w-1/2 pl-8">
-<h3 class="text-xl mb-2 Hochzeit"></h3>
-<p class="text-gray-600 church-lok"></p>
-</div>
-</div>
-<div class="flex items-center">
-<div class="w-1/2 pr-8 text-right">
-<h3 class="text-xl mb-2 Sekt"></h3>
-<p class="text-gray-600 Sekt-Ort"></p>
-</div>
-<div class="w-4 h-4 bg-primary rounded-full relative z-10"></div>
-<div class="w-1/2 pl-8">
-<div class="flex items-center">
-<i class="ri-goblet-line text-primary text-2xl mr-4"></i>
-<span class="text-2xl">12:00</span>
-</div>
-</div>
-</div>
-<div class="flex items-center">
-<div class="w-1/2 pr-8 text-right">
-<div class="flex justify-end items-center">
-<span class="text-2xl">14:00</span>
-<i class="ri-restaurant-line text-primary text-2xl ml-4"></i>
-</div>
-</div>
-<div class="w-4 h-4 bg-primary rounded-full relative z-10"></div>
-<div class="w-1/2 pl-8">
-<h3 class="text-xl mb-2 Mittagessen"></h3>
-<p class="text-gray-600 party-ort"></p>
-</div>
-</div>
-<div class="flex items-center">
-<div class="w-1/2 pr-8 text-right">
-<h3 class="text-xl mb-2 kuchen"></h3>
-<p class="text-gray-600 party-ort"></p>
-</div>
-<div class="w-4 h-4 bg-primary rounded-full relative z-10"></div>
-<div class="w-1/2 pl-8">
-<div class="flex items-center">
-<i class="ri-cake-line text-primary text-2xl mr-4"></i>
-<span class="text-2xl">16:00</span>
-</div>
-</div>
-</div>
-<div class="flex items-center">
-<div class="w-1/2 pr-8 text-right">
-<div class="flex justify-end items-center">
-<span class="text-2xl">17:00</span>
-<i class="ri-music-2-line text-primary text-2xl ml-4"></i>
-</div>
-</div>
-<div class="w-4 h-4 bg-primary rounded-full relative z-10"></div>
-<div class="w-1/2 pl-8">
-<h3 class="text-xl mb-2 Tanz"></h3>
-<p class="text-gray-600 party-ort"></p>
-</div>
-</div>
-<div class="flex items-center">
-<div class="w-1/2 pr-8 text-right">
-<h3 class="text-xl mb-2 abendessen"></h3>
-<p class="text-gray-600 party-ort"></p>
-</div>
-<div class="w-4 h-4 bg-primary rounded-full relative z-10"></div>
-<div class="w-1/2 pl-8">
-<div class="flex items-center">
-<i class="ri-restaurant-line text-primary text-2xl mr-4"></i>
-<span class="text-2xl">20:00</span>
-</div>
-</div>
-</div>
-<div class="flex items-center">
-<div class="w-1/2 pr-8 text-right">
-<div class="flex justify-end items-center">
-<span class="text-2xl">21:00</span>
-<i class="ri-flower-line text-primary text-2xl ml-4"></i>
-</div>
-</div>
-<div class="w-4 h-4 bg-primary rounded-full relative z-10"></div>
-<div class="w-1/2 pl-8">
-<h3 class="text-xl mb-2 Strauß"></h3>
-<p class="text-gray-600 party-ort"></p>
-</div>
-</div>
-<div class="flex items-center">
-<div class="w-1/2 pr-8 text-right">
-<h3 class="text-xl mb-2 Ende"></h3>
-<p class="text-gray-600 party-ort"></p>
-</div>
-<div class="w-4 h-4 bg-primary rounded-full relative z-10"></div>
-<div class="w-1/2 pl-8">
-<div class="flex items-center">
-<i class="ri-moon-line text-primary text-2xl mr-4"></i>
-<span class="text-2xl">03:00</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="accommodation" class="py-20 bg-white">
-<div class="container mx-auto px-4">
-<h2 class="lucida-calligraphy text-4xl text-primary text-center mb-12 title-Übernachtung"></h2>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-<div class="bg-secondary/10 p-6 rounded-lg">
-<h3 class="text-2xl mb-4 Alina"></h3>
-<div class="mb-4">
-<p class="Alina-Adresse"></p>
-<p class="mb-2 Alina-Text"></p>
-<p class="mb-4 Alina-Preis"></p>
-<a href="https://maps.google.com/?q=Hotel+Alina+Aldenhoven" target="_blank" class="inline-flex items-center text-primary hover:text-primary/80">
-<i class="ri-map-pin-line mr-2"></i>
-Google Maps
-</a>
-</div>
-</div>
-<div class="bg-secondary/10 p-6 rounded-lg">
-<h3 class="text-2xl mb-4 HIB"></h3>
-<div class="mb-4">
-<p class="HIB-Adfresse"></p>
-<p class="mb-2 HIB-Text"></p>
-<p class="mb-4 HIB-Preis"></p>
-<a href="https://maps.google.com/?q=HIB+Hotel+Baesweiler" target="_blank" class="inline-flex items-center text-primary hover:text-primary/80">
-<i class="ri-map-pin-line mr-2"></i>
-Google Maps
-</a>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="dress-code" class="py-20 bg-secondary/10">
-<div class="container mx-auto px-4">
-<h2 class="lucida-calligraphy text-4xl text-primary text-center mb-12 title-Dress"></h2>
-<p class="text-lg mb-8 text-center Code-Text"></p>
-</div>
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-<div class="bg-white p-8 rounded-lg shadow-lg">
-<h3 class="text-2xl mb-6 Frauen"></h3>
-<ul class="space-y-4">
-<li class="flex items-center">
-<i class="ri-check-line text-gold mr-2"></i>
-<span class= "F-P1" ></span>
-</li>
-<li class="flex items-center">
-<i class="ri-check-line text-gold mr-2"></i>
-<span class="F-P2"></span>
-</li>
-<li class="flex items-center">
-<i class="ri-check-line text-gold mr-2"></i>
-<span class="F-P3"></span>
-</li>
-</ul>
-<div class="mt-6">
-<img src="https://raw.githubusercontent.com/Fastixx/wedding/main/images/223144.png"
-class="w-full h-144 object-cover rounded-lg" alt="Women's outfit">
-</div>
-<div class="mt-6 space-y-4">
-<h4 class="text-xl Acess"></h4>
-<ul class="space-y-2">
-<li class="flex items-center">
-<i class="ri-star-line text-gold mr-2"></i>
-<span class="F-A1"></span>
-</li>
-<li class="flex items-center">
-<i class="ri-star-line text-gold mr-2"></i>
-<span class= "F-A2"></span>
-</li>
-</ul>
-</div>
-</div>
-<div class="bg-white p-8 rounded-lg shadow-lg">
-<h3 class="text-2xl mb-6 Männer"></h3>
-<ul class="space-y-4">
-<li class="flex items-center">
-<i class="ri-check-line text-gold mr-2"></i>
-<span class="M-P1"></span>
-</li>
-<li class="flex items-center">
-<i class="ri-check-line text-gold mr-2"></i>
-<span class="M-P2"></span>
-</li>
-<li class="flex items-center">
-<i class="ri-check-line text-gold mr-2"></i>
-<span class="M-P3"></span>
-</li>
-</ul>
-<div class="mt-6">
-<img src="https://raw.githubusercontent.com/Fastixx/wedding/main/images/224622.png"
-class="w-full h-144 object-cover rounded-lg" alt="Men's outfit">
-</div>
-<div class="mt-6 space-y-4">
-<h4 class="text-xl Acess"></h4>
-<ul class="space-y-2">
-<li class="flex items-center">
-<i class="ri-star-line text-gold mr-2"></i>
-<span class="M-A1"></span>
-</li>
-<li class="flex items-center">
-<i class="ri-star-line text-gold mr-2"></i>
-<span class="M-A2"></span>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="rsvp" class="py-20 bg-white">
-<div class="container mx-auto px-4">
-<h2 class="lucida-calligraphy text-4xl text-primary text-center mb-12 title-Antwort"></h2>
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf38Lgoznbo55nEV6eRabuSD6IEHcg9D-04QUs1J0R00V3Z3w/viewform?embedded=true" width=100% height="800" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
-</div>
-</section>
-<section id="gallery" class="py-20 bg-white">
-<div class="container mx-auto px-4">
-<h2 class="lucida-calligraphy text-4xl text-primary text-center mb-12 title-Galerie"></h2>
-<div class="max-w-xl mx-auto mb-12 text-center">
-<label class="block mb-4 text-lg">Teilen Sie Ihre Fotos mit uns / Podziel się z nami swoimi zdjęciami</label>
-<div class="relative">
-<input type="file" id="photo-upload" accept="image/*" multiple class="hidden" onchange="handleFileUpload(event)">
-<label for="photo-upload" class="inline-flex items-center px-6 py-3 bg-primary text-white rounded-button cursor-pointer hover:bg-primary/90 transition-colors">
-<i class="ri-upload-2-line mr-2"></i>
-Fotos hochladen / Prześlij zdjęcia
-</label>
-</div>
-<p class="mt-2 text-sm text-gray-600">Max. 5 MB pro Foto / Maks. 5 MB na zdjęcie</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<div class="bg-secondary/10 rounded-lg overflow-hidden group cursor-pointer" onclick="openGallery('bachelor')">
-<div class="relative h-64">
-<img src="https://public.readdy.ai/ai/img_res/74d9a83f87022392959babdc53bb8fe4.jpg"
-class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" alt="Bachelor party">
-<div class="absolute inset-0 bg-primary/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-<i class="ri-image-line text-white text-3xl"></i>
-</div>
-</div>
-<div class="p-6">
-<h3 class="text-xl mb-2">Junggesellenabschied / Wieczór kawalerski</h3>
-<p class="text-gray-600">Thomas letzter Abend in Freiheit / Ostatni wieczór wolności Tomka</p>
-</div>
-</div>
-<div class="bg-secondary/10 rounded-lg overflow-hidden group cursor-pointer" onclick="openGallery('bachelorette')">
-<div class="relative h-64">
-<img src="https://public.readdy.ai/ai/img_res/258cf669071ffba590565f528eca2473.jpg"
-class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" alt="Bachelorette party">
-<div class="absolute inset-0 bg-primary/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-<i class="ri-image-line text-white text-3xl"></i>
-</div>
-</div>
-<div class="p-6">
-<h3 class="text-xl mb-2">Junggesellinnenabschied / Wieczór panieński</h3>
-<p class="text-gray-600">Zitas letzte Party als Single / Ostatnia impreza Zity jako singielki</p>
-</div>
-</div>
-<div class="bg-secondary/10 rounded-lg overflow-hidden group cursor-pointer" onclick="openGallery('celebration')">
-<div class="relative h-64">
-<img src="https://public.readdy.ai/ai/img_res/86f2dc8131324e167ccc2e03c560e85e.jpg"
-class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" alt="Celebration">
-<div class="absolute inset-0 bg-primary/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-<i class="ri-image-line text-white text-3xl"></i>
-</div>
-</div>
-<div class="p-6">
-<h3 class="text-xl mb-2">Verlobung / Zaręczyny</h3>
-<p class="text-gray-600">Der magische Moment / Magiczny moment</p>
-</div>
-</div>
-</div>
-<div id="gallery-modal" class="fixed inset-0 bg-black/90 hidden z-50">
-<div class="absolute inset-0 flex items-center justify-center">
-<button onclick="closeGallery()" class="absolute top-4 right-4 text-white hover:text-gold">
-<i class="ri-close-line text-3xl"></i>
-</button>
-<div class="w-full max-w-4xl">
-<div id="gallery-content" class="relative h-[70vh]">
-<img id="gallery-image" class="w-full h-full object-contain" src="" alt="Gallery image">
-<button onclick="prevImage()" class="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-gold">
-<i class="ri-arrow-left-line text-3xl"></i>
-</button>
-<button onclick="nextImage()" class="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-gold">
-<i class="ri-arrow-right-line text-3xl"></i>
-</button>
-</div>
-<div class="text-center mt-4">
-<h3 id="gallery-title" class="text-white text-xl mb-2"></h3>
-<p id="gallery-description" class="text-gray-300"></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="traditions" class="py-20 bg-secondary/10">
-<div class="container mx-auto px-4">
-<h2 class="lucida-calligraphy text-4xl text-primary text-center mb-12 title-Traditionen"></h2>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-<div class="bg-white p-6 rounded-lg shadow-sm">
-<div class="w-12 h-12 flex items-center justify-center mb-3">
-<i class="ri-heart-line text-2xl text-primary"></i>
-</div>
-<h3 class="text-xl mb-3 Kuss"></h3>
-<p class="text-gray-600 text-sm Kuss-Text"></p>
-</div>
-<div class="bg-white p-6 rounded-lg shadow-sm">
-<div class="w-12 h-12 flex items-center justify-center mb-3">
-<i class="ri-flower-line text-2xl text-primary"></i>
-</div>
-<h3 class="text-xl mb-3 Strauß"></h3>
-<p class="text-gray-600 text-sm Strauß-Text"></p>
-</div>
-<div class="bg-white p-6 rounded-lg shadow-sm">
-<div class="w-12 h-12 flex items-center justify-center mb-3">
-<i class="ri-shirt-line text-2xl text-primary"></i>
-</div>
-<h3 class="text-xl mb-3 Jacket"></h3>
-<p class="text-gray-600 text-sm Jacket-Text"></p>
-</div>
-<div class="bg-white p-6 rounded-lg shadow-sm">
-<div class="w-12 h-12 flex items-center justify-center mb-3">
-<i class="ri-shirt-line text-2xl text-primary"></i>
-</div>
-<h3 class="text-xl mb-3 Tortenschnitt"></h3>
-<p class="text-gray-600 text-sm Tortenschnitt-Text"></p>
-</div>
-<div class="bg-white p-6 rounded-lg shadow-sm">
-<div class="w-12 h-12 flex items-center justify-center mb-3">
-<i class="ri-goblet-line text-2xl text-primary"></i>
-</div>
-<h3 class="text-xl mb-3 Pausen"></h3>
-<p class="text-gray-600 text-sm Pausen-Text"></p>
-</div>
-</div>
-</div>
-</section>
-<section id="gifts" class="py-20 bg-white">
-<div class="container mx-auto px-4">
-<h2 class="lucida-calligraphy text-4xl text-primary text-center mb-12 title-Geschenke"></h2>
-<div class="max-w-2xl mx-auto text-center">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
 <div class="bg-secondary/10 p-8 rounded-lg">
-<i class="ri-heart-2-line text-4xl text-primary mb-4"></i>
-<p class="text-lg mb-6 Geschenke-text"></p>
+<div class="w-12 h-12 flex items-center justify-center mb-6">
+<i class="ri-heart-2-line text-3xl text-primary"></i>
+</div>
+<h3 class="text-2xl mb-4">Besondere Momente / Wyjątkowe chwile</h3>
+<p class="text-gray-700 leading-relaxed">Jeder einzelne Moment, jedes Lächeln und jede Umarmung haben unseren Tag perfekt gemacht. Die Erinnerungen werden wir für immer in unseren Herzen tragen.</p>
+<p class="text-gray-700 leading-relaxed mt-4">Każda chwila, każdy uśmiech i każdy uścisk uczyniły nasz dzień doskonałym. Te wspomnienia na zawsze pozostaną w naszych sercach.</p>
+</div>
+<div class="bg-secondary/10 p-8 rounded-lg">
+<div class="w-12 h-12 flex items-center justify-center mb-6">
+<i class="ri-gift-2-line text-3xl text-primary"></i>
+</div>
+<h3 class="text-2xl mb-4">Geschenke / Prezenty</h3>
+<p class="text-gray-700 leading-relaxed">Wir sind überwältigt von Eurer Großzügigkeit und den liebevollen Geschenken. Danke, dass Ihr unseren Start in die Ehe so besonders gemacht habt.</p>
+<p class="text-gray-700 leading-relaxed mt-4">Jesteśmy poruszeni Waszą hojnością i pełnymi miłości prezentami. Dziękujemy, że uczyniliście początek naszego małżeństwa tak wyjątkowym.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+<img src="https://raw.githubusercontent.com/Fastixx/wedding/main/images/DSC_0110.jpeg" 
+class="w-full h-64 object-cover rounded-lg" alt="Wedding celebration">
+<img src="https://raw.githubusercontent.com/Fastixx/wedding/main/images/_Z612031.jpg" 
+class="w-full h-64 object-cover rounded-lg" alt="Wedding ceremony">
+<img src="https://raw.githubusercontent.com/Fastixx/wedding/main/images/DSC_0344.jpeg" 
+class="w-full h-64 object-cover rounded-lg" alt="Wedding dinner">
+</div>
+<div class="text-center bg-secondary/10 p-8 rounded-lg">
+<i class="ri-double-quotes-l text-4xl text-primary mb-6"></i>
+<p class="text-xl leading-relaxed mb-6">Mit Euch haben wir nicht nur unsere Liebe gefeiert, sondern auch die wertvollen Beziehungen, die unser Leben bereichern.</p>
+<p class="text-xl leading-relaxed">Z Wami świętowaliśmy nie tylko naszą miłość, ale także cenne relacje, które wzbogacają nasze życie.</p>
 </div>
 </div>
 </div>
-</section>
-<section id="story" class="py-20 bg-secondary/10">
-<div class="container mx-auto px-4">
-<h2 class="lucida-calligraphy text-4xl text-primary text-center mb-12 title-Geschichte"></h2>
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-<div class="space-y-6">
-<div class="bg-secondary/10 p-6 rounded-lg">
-<h3 class="text-2xl mb-4 Kennenlernen"></h3>
-<p class="text-gray-700 Kennenlernen-text"></p>
-<p class="text-gray-700"></p>
-</div>
-<div class="bg-secondary/10 p-6 rounded-lg">
-<h3 class="text-2xl mb-4 Antrag"></h3>
-<p class="text-gray-700 Antrag-text"></p>
-</div>
-</div>
-<div class="relative h-[500px] rounded-lg overflow-hidden">
-<img src="https://raw.githubusercontent.com/Fastixx/wedding/main/images/211324.jpeg"
-class="absolute inset-0 w-full h-full object-cover" alt="Engagement moment">
-</div>
-</div>
-</div>
+<section class="py-20 bg-white">
+  <div class="container mx-auto px-4">
+    <h2 class="lucida-calligraphy text-4xl text-primary text-center mb-12">
+      Fotogalerie / Galeria zdjęć
+    </h2>
+    <div class="max-w-xl mx-auto mb-12 text-center">
+      <label class="block mb-4 text-lg">
+        Teilen Sie Ihre Fotos mit uns / Podziel się z nami swoimi zdjęciami
+      </label>
+      <div class="relative">
+        <a href="https://www.picdrop.com/saschawinter/HMh3isaHjH"
+           class="inline-flex items-center px-6 py-3 bg-primary text-white rounded-button cursor-pointer hover:bg-primary/90 transition-colors">
+          <i class="ri-upload-2-line mr-2"></i>
+          Zur Fotogalerie / Galeria zdjęć
+        </a>
+      </div>
+    </div>
+  </div>
 </section>
 <footer class="bg-primary text-white py-12">
 <div class="container mx-auto px-4">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
 <div class="text-center">
-<h3 class="text-2xl mb-6 Trauzeugen"></h3>
-<p class="text-sm mb-4 Trauzeugen-Text"></p>
-<div class="flex justify-center gap-12">
-<div class="text-center">
-<div class="w-48 h-48 mb-4">
-<img src="https://raw.githubusercontent.com/Fastixx/wedding/main/images/133538.jpeg"
-class="w-full h-full object-cover rounded-full border-4 border-gold" alt="Maid of Honor">
-</div>
-<p class="text-lg font-semibold">Sara Piernikarczyk</p>
-<p class="mb-2">Maid of Honor</p>
-<p>+49 176 61842792</p>
-</div>
-<div class="text-center">
-<div class="w-48 h-48 mb-4">
-<img src="https://raw.githubusercontent.com/Fastixx/wedding/main/images/215720.jpeg"
-class="w-full h-full object-cover rounded-full border-4 border-gold" alt="Best Man">
-</div>
-<p class="text-lg font-semibold">Shawn Heinemann</p>
-<p class="mb-2">Best Man</p>
-<p>+49 172 1024192</p>
-</div>
-</div>
-</div>
-<div class="text-center">
-<h3 class="text-2xl mb-6">Kontakt</h3>
-<div class="space-y-4">
-<p>
-<i class="ri-mail-line mr-2"></i>
-Thomas.Ol@gmx.de
-</p>
-<p>
-<i class="ri-phone-line mr-2"></i>
-+49 174 244 3978
-</p>
-<p>
-<i class="ri-map-pin-line mr-2"></i>
-Goethestraße 13<br>
-52441 Linnich
-</p>
-</div>
-</div>
-</div>
-<div class="text-center border-t border-white/20 pt-6">
-<p class="lucida-calligraphy text-2xl mb-2">Zita & Thomas</p>
-<p class= "daTum"></p>
+<p class="lucida-calligraphy text-3xl mb-4">Zita & Thomas</p>
+<p class="text-lg mb-6">31. Mai 2025</p>
+<p class="text-lg">Liebe Grüße / Z miłością</p>
 </div>
 </div>
 </footer>
@@ -624,137 +176,6 @@ link.classList.add('active');
 }
 });
 }
-window.addEventListener('scroll', updateActiveNavLink);
-window.addEventListener('load', updateActiveNavLink);
-function updateCountdown() {
-const weddingDate = new Date('2025-05-31T10:30:00').getTime();
-const now = new Date().getTime();
-const distance = weddingDate - now;
-document.getElementById('days').textContent = Math.floor(distance / (1000 * 60 * 60 * 24));
-document.getElementById('hours').textContent = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-document.getElementById('minutes').textContent = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-}
-setInterval(updateCountdown, 1000);
-updateCountdown();
-document.querySelector('form').addEventListener('submit', (e) => {
-e.preventDefault();
-const notification = document.createElement('div');
-notification.className = 'fixed top-4 right-4 bg-primary text-white p-4 rounded-lg shadow-lg';
-notification.textContent = 'Vielen Dank für Ihre Zusage! / Dziękujemy za potwierdzenie!';
-document.body.appendChild(notification);
-setTimeout(() => notification.remove(), 3000);
-e.target.reset();
-});
-const galleries = {
-bachelor: [
-{
-src: "https://public.readdy.ai/ai/img_res/dea1146ad464c1491b3431f396ffea0b.jpg",
-title: "Junggesellenabschied / Wieczór kawalerski",
-description: "Eine unvergessliche Nacht / Niezapomniana noc"
-},
-{
-src: "https://public.readdy.ai/ai/img_res/dd20f533c7a07f4d6a073c08b90f0c29.jpg",
-title: "Dinner mit Freunden / Kolacja z przyjaciółmi",
-description: "Gemeinsames Abendessen / Wspólna kolacja"
-},
-{
-src: "https://public.readdy.ai/ai/img_res/bdb0b65ac882cc90a7514c4325f21024.jpg",
-title: "Yacht Party",
-description: "Sonnenuntergang auf dem Wasser / Zachód słońca na wodzie"
-}
-],
-bachelorette: [
-{
-src: "https://public.readdy.ai/ai/img_res/15576071ac59a8f77d16dc1838169bfa.jpg",
-title: "Junggesellinnenabschied / Wieczór panieński",
-description: "Spa & Wellness Tag / Dzień spa i wellness"
-},
-{
-src: "https://public.readdy.ai/ai/img_res/f887a3191080d3f76a1b026cef61e549.jpg",
-title: "Rooftop Party",
-description: "Cocktails & Gespräche / Koktajle i rozmowy"
-},
-{
-src: "https://public.readdy.ai/ai/img_res/9218c4dbd1309edb8c3ed28f1180bc12.jpg",
-title: "Gourmet Dinner",
-description: "Kulinarische Highlights / Kulinarne przysmaki"
-}
-],
-celebration: [
-{
-src: "https://public.readdy.ai/ai/img_res/5484dfa53de148f86fdf6862c5a9758b.jpg",
-title: "Verlobungsfeier / Zaręczyny",
-description: "Der Antrag / Oświadczyny"
-},
-{
-src: "https://public.readdy.ai/ai/img_res/3a7ca066537b67eeab2c54f4d6d5c8c8.jpg",
-title: "Festliche Dekoration / Świąteczna dekoracja",
-description: "Romantische Atmosphäre / Romantyczna atmosfera"
-},
-{
-src: "https://public.readdy.ai/ai/img_res/833769ee62139823d45abf998bd6c545.jpg",
-title: "Familienmomente / Momenty rodzinne",
-description: "Gemeinsame Freude / Wspólna radość"
-}
-]
-};
-let currentGallery = [];
-let currentIndex = 0;
-function openGallery(type) {
-currentGallery = galleries[type];
-currentIndex = 0;
-updateGalleryImage();
-document.getElementById('gallery-modal').classList.remove('hidden');
-}
-function closeGallery() {
-document.getElementById('gallery-modal').classList.add('hidden');
-}
-function handleFileUpload(event) {
-const files = event.target.files;
-if (files.length > 0) {
-const notification = document.createElement('div');
-notification.className = 'fixed top-4 right-4 bg-primary text-white p-4 rounded-lg shadow-lg z-50';
-notification.textContent = 'Vielen Dank für Ihre Fotos! / Dziękujemy za przesłane zdjęcia!';
-document.body.appendChild(notification);
-setTimeout(() => notification.remove(), 3000);
-event.target.value = '';
-}
-}
-function updateGalleryImage() {
-const image = document.getElementById('gallery-image');
-const title = document.getElementById('gallery-title');
-const description = document.getElementById('gallery-description');
-image.src = currentGallery[currentIndex].src;
-title.textContent = currentGallery[currentIndex].title;
-description.textContent = currentGallery[currentIndex].description;
-}
-function nextImage() {
-currentIndex = (currentIndex + 1) % currentGallery.length;
-updateGalleryImage();
-}
-function prevImage() {
-currentIndex = (currentIndex - 1 + currentGallery.length) % currentGallery.length;
-updateGalleryImage();
-}
-document.addEventListener('keydown', (e) => {
-if (document.getElementById('gallery-modal').classList.contains('hidden')) return;
-if (e.key === 'Escape') closeGallery();
-if (e.key === 'ArrowRight') nextImage();
-if (e.key === 'ArrowLeft') prevImage();
-});
-</script>
-<button id="to-top" class="fixed bottom-8 right-8 bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 transition-opacity duration-300 hover:bg-primary/90" onclick="window.scrollTo({top: 0, behavior: 'smooth'})"><i class="ri-arrow-up-line text-xl"></i>
-</button>
-<script>
-window.addEventListener('scroll', () => {
-const toTop = document.getElementById('to-top');
-if (window.scrollY > 500) {
-toTop.style.opacity = '1';
-} else {
-toTop.style.opacity = '0';
-}
-});
 </script>
 </body>
-<script src="translations.js"></script>
 </html>
